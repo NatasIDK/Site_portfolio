@@ -1,0 +1,12 @@
+body {
+    background-image: url("../imgs/fond_cv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btndrop{
+    background-color: black !important;
+}
+.ul_dropdrop{
+    color: black !important;
+}

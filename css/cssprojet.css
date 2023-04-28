@@ -1,0 +1,16 @@
+
+.carousel .carousel-item{
+    width: 450px!important;
+    height: 450px!important;
+}
+
+.margincarou{
+    margin-top: 80px!important;
+}
+
+#btndrop{
+    background-color: black !important;
+}
+.ul_dropdrop{
+    color: black !important;
+}
