@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 28, 2023 at 02:04 PM
+-- Generation Time: Apr 28, 2023 at 02:32 PM
 -- Server version: 5.6.20-log
 -- PHP Version: 5.4.31
 
@@ -77,6 +77,26 @@ INSERT INTO `home` (`id`, `NavProjet`, `Navnomprojet1`, `Navnomprojet2`, `Navnom
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `livre`
+--
+
+CREATE TABLE IF NOT EXISTS `livre` (
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `message` text NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `livre`
+--
+
+INSERT INTO `livre` (`name`, `email`, `message`, `id`) VALUES
+('test', 'test@test.c', 'see', 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `projet`
 --
 
@@ -136,6 +156,12 @@ ALTER TABLE `contact`
 --
 ALTER TABLE `home`
  ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `livre`
+--
+ALTER TABLE `livre`
+ ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `projet`

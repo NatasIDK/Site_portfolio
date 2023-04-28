@@ -40,7 +40,6 @@
                     <!-- navbar game -->
                     <li><a href="game.php">Game</a></li>
                     <li><a href="CV.php"><?php echo $home["navCV"]?></a></li>
-                    <li><a href="fichetech.php">fiche technique</a></li>
                 <!-- Dropdown Structure -->
                 <?php 
                 
@@ -89,6 +88,28 @@
 
             <!--END OF PARALLAX -->
 
+            <h2 class="center">LIVRE D'OR</h2>
+            <h3 class="center">Pense à me laisser un msg</h3>
+            <div id="formul"class="row">
+  <div class="col offset-l3 s6">
+        <div class="modal-content">
+          <form id="contact-form" action="phpcfg/livredor.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Envoyer">
+          </form>
+          <div id="form-output"></div>                                         
+        </div>
+      </div>
+    </div>
+</div>
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="js/jqueryjsmin.js" ></script>
