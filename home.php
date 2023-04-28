@@ -40,6 +40,7 @@
                     <!-- navbar game -->
                     <li><a href="game.php">Game</a></li>
                     <li><a href="CV.php"><?php echo $home["navCV"]?></a></li>
+                    <li><a href="fichetech.php">fiche technique</a></li>
                 <!-- Dropdown Structure -->
                 <?php 
                 

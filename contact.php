@@ -13,25 +13,38 @@
   </head>
 
   <body>
+  <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper black ">
+              <a href="contact.php" class="brand-logo right">Contact</a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="home.php">HOME</a></li>
+                 
+            </ul>
+            </div>
+        </nav>
+        </div>
+
+
 <div id="formul"class="row">
   <div class="col offset-l3 s6">
-        <form action="/ma-page-de-traitement" method="post">
-            <div class="col offset-l3" >
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name">
-            </div>
-            <div class="col offset-l3" >
-                <label for="mail">e-mail&nbsp;:</label>
-                <input type="email" id="mail" name="user_mail">
-            </div>
-            <div class="col offset-l3" >
-                <label for="msg">Message :</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </div>
-            <div class="col offset-l6">
-            <button class="col waves-effect waves-light btn" >Submit</button>
-            </div>
-        </form>
+        <div class="modal-content">
+          <form id="contact-form" action="phpcfg/submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Envoyer">
+            <a href="home.php" class="right" style="color: black;">Retour</a>
+          </form>
+          <div id="form-output"></div>                                         
+        </div>
+      </div>
     </div>
 </div>
   
